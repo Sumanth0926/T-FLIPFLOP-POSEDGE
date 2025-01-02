@@ -9,21 +9,8 @@ To implement  T flipflop using verilog and validating their functionality using 
 Quartus prime
 
 **THEORY**
+T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure
 
-
-        module t_ff_ (t, clk, rst, q);
-      input t, clk, rst;
-      output reg q;
-      always @(posedge clk or posedge rst) 
-    begin
-        if (rst)
-          q <= 0; // Reset the flip-flop
-        else if (t==0)
-          q <= q; 
-         else
-            q<=~q;
-      end
-     endmodule
 **T Flip-Flop**
 
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
@@ -42,11 +29,31 @@ From the above characteristic table, we can directly write the next state equati
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Define Inputs/Outputs: Inputs: T (toggle), clk (clock); Outputs: Q, Qbar (~Q). 
+
+2.Initialize: Set Q = 0 and Qbar = 1 at the start of simulation. 
+
+3.Toggle Logic: On posedge clk, update Q 
+
+4.Complementary Output: Set Qbar = ~Q to maintain complementarity. 
+
+5.Testbench: Simulate with various T and clk values to verify toggle functionality.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+        module t_ff_ (t, clk, rst, q);
+      input t, clk, rst;
+      output reg q;
+      always @(posedge clk or posedge rst) 
+    begin
+        if (rst)
+          q <= 0; // Reset the flip-flop
+        else if (t==0)
+          q <= q; 
+         else
+            q<=~q;
+      end
+     endmodule
 Developed by: pothu sumanth
 RegisterNumber: 24000831
 */
@@ -54,7 +61,8 @@ RegisterNumber: 24000831
 **RTL LOGIC FOR FLIPFLOPS**
 
 
-![WhatsApp Image 2024-12-27 at 13 38 29_10198869](https://github.com/user-attachments/assets/ce833c93-fa11-4442-b9bc-1efdab5d9047)
+![Screenshot 2025-01-02 203010](https://github.com/user-attachments/assets/03643fff-0a59-4409-bb79-076e7fb30e50)
+
 
 
 
