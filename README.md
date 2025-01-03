@@ -61,8 +61,7 @@ RegisterNumber: 24000831
 **RTL LOGIC FOR FLIPFLOPS**
 
 
-![Screenshot 2025-01-02 203010](https://github.com/user-attachments/assets/03643fff-0a59-4409-bb79-076e7fb30e50)
-
+![Screenshot 2025-01-03 135707](https://github.com/user-attachments/assets/1ba70880-6e32-4918-aaf7-dc43ac68a802)
 
 
 
