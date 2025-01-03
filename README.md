@@ -65,7 +65,7 @@ RegisterNumber: 24000831
 
 
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+**TIMING DIAGRAMS FOR FLIP FLOPS**
 
 
 ![WhatsApp Image 2024-12-27 at 13 38 18_63c4eb15](https://github.com/user-attachments/assets/20c15128-4cde-45a1-942d-01158d0961a4)
